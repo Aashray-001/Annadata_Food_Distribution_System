@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Annadata - Food Donation & Distribution System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <div class="auth-box">
+    <h1>🍲 Annadata</h1>
+    <p class="tagline muted">Food Donation &amp; Distribution System</p>
+
+    <div class="tabs">
+      <button id="tabLogin" class="active" type="button">Login</button>
+      <button id="tabRegister" type="button">Register</button>
+    </div>
+
+    <form id="loginForm">
+      <div class="field"><label for="lEmail">Email</label><input id="lEmail" name="email" type="email" required autofocus></div>
+      <div class="field"><label for="lPass">Password</label><input id="lPass" name="password" type="password" required></div>
+      <div class="auth-error" id="loginError"></div>
+      <button class="btn" style="width:100%" type="submit">Login</button>
+      <div class="demo">
+        Demo accounts:<br>
+        admin@foodshare.com / admin123<br>
+        donor@foodshare.com / donor123<br>
+        recipient@foodshare.com / recipient123
+      </div>
+    </form>
+
+    <form id="registerForm" class="hidden">
+      <div class="field"><label for="rName">Full name / organisation *</label><input id="rName" name="name" required></div>
+      <div class="field"><label for="rEmail">Email *</label><input id="rEmail" name="email" type="email" required></div>
+      <div class="field"><label for="rRole">I am a *</label>
+        <select id="rRole" name="role"><option value="donor">Donor</option><option value="recipient">Recipient (NGO / shelter / individual)</option></select></div>
+      <div class="field"><label for="rPass">Password * (min 6 characters)</label><input id="rPass" name="password" type="password" required></div>
+      <div class="field"><label for="rPass2">Confirm password *</label><input id="rPass2" name="confirm" type="password" required></div>
+      <div class="field"><label for="rPhone">Phone</label><input id="rPhone" name="phone"></div>
+      <div class="field"><label for="rAddr">Address</label><textarea id="rAddr" name="address" style="min-height:50px"></textarea></div>
+      <div class="auth-error" id="registerError"></div>
+      <button class="btn" style="width:100%" type="submit">Create account</button>
+    </form>
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

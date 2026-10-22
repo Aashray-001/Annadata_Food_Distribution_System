@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donor Dashboard - Annadata</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">🍲 Annadata</div>
+      <div class="who" id="who">Loading…</div>
+      <nav id="nav">
+        <a href="#dashboard" data-view="dashboard">🏠 Dashboard</a>
+        <a href="#create" data-view="create">➕ Post Donation</a>
+        <a href="#donations" data-view="donations">📦 My Donations</a>
+        <a href="#schedule" data-view="schedule">📅 Distribution Schedule</a>
+        <a href="#emergency" data-view="emergency">🚨 Emergencies</a>
+        <a href="#notifications" data-view="notifications">🔔 Notifications <span id="notifBadge" class="pill-count hidden">0</span></a>
+      </nav>
+      <button class="logout" id="logout" type="button">Logout</button>
+    </aside>
+    <main id="content"></main>
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/donor.js"></script>
+</body>
+</html>
