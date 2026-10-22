@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Dashboard - Annadata</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">🍲 Annadata</div>
+      <div class="who" id="who">Loading…</div>
+      <nav id="nav">
+        <a href="#overview" data-view="overview">📊 Overview</a>
+        <a href="#users" data-view="users">👥 Users</a>
+        <a href="#donations" data-view="donations">🍲 Donations</a>
+        <a href="#requests" data-view="requests">📋 Claim Requests</a>
+        <a href="#analytics" data-view="analytics">📈 Source Charts</a>
+        <a href="#schedule" data-view="schedule">📅 Schedule</a>
+        <a href="#places" data-view="places">📍 Places</a>
+        <a href="#emergency" data-view="emergency">🚨 Emergencies</a>
+        <a href="#notifications" data-view="notifications">🔔 Notifications <span id="notifBadge" class="pill-count hidden">0</span></a>
+      </nav>
+      <button class="logout" id="logout" type="button">Logout</button>
+    </aside>
+    <main id="content"></main>
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
